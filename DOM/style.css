@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 700px;
+
+    background: white;
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #777;
+}
+
+.entrada {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#tareaInput {
+    flex: 1;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+#agregarBtn {
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #222;
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+#agregarBtn:hover {
+    background: #444;
+}
+
+.estadisticas {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.estadistica {
+    text-align: center;
+
+    background: #f5f5f5;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    width: 31%;
+}
+
+.estadistica span {
+    display: block;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    color: #222;
+}
+
+.estadistica p {
+    color: #777;
+    margin-top: 5px;
+}
+
+#listaTareas {
+    list-style: none;
+}
+
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+
+    background: #f8f8f8;
+
+    border-radius: 8px;
+
+    border-left: 5px solid #222;
+}
+
+.tarea.completada {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.texto-tarea {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botones {
+    display: flex;
+    gap: 8px;
+}
+
+.completar,
+.eliminar {
+    border: none;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.completar {
+    background: #ddd;
+}
+
+.eliminar {
+    background: #222;
+    color: white;
+}
+
+#mensaje {
+    text-align: center;
+    color: #888;
+
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .entrada {
+        flex-direction: column;
+    }
+
+    #agregarBtn {
+        width: 100%;
+    }
+
+    .estadisticas {
+        gap: 8px;
+    }
+
+    .estadistica {
+        width: 33%;
+    }
+
+    .tarea {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

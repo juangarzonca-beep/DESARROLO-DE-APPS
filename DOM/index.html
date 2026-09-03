@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Manipulación del DOM</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <header>
+            <h1 id="titulo">Mi lista de tareas</h1>
+            <p>Ejercicio práctico de manipulación del DOM con JavaScript</p>
+        </header>
+
+        <section class="entrada">
+
+            <input 
+                type="text" 
+                id="tareaInput" 
+                placeholder="Escribe una tarea..."
+            >
+
+            <button id="agregarBtn">
+                Agregar tarea
+            </button>
+
+        </section>
+
+        <section class="estadisticas">
+
+            <div class="estadistica">
+                <span id="totalTareas">0</span>
+                <p>Total</p>
+            </div>
+
+            <div class="estadistica">
+                <span id="tareasCompletadas">0</span>
+                <p>Completadas</p>
+            </div>
+
+            <div class="estadistica">
+                <span id="tareasPendientes">0</span>
+                <p>Pendientes</p>
+            </div>
+
+        </section>
+
+        <ul id="listaTareas">
+            <!-- Las tareas aparecerán aquí mediante JavaScript -->
+        </ul>
+
+        <p id="mensaje">
+            No hay tareas todavía.
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
