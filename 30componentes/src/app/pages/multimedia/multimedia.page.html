@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Multimedia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-refresher slot="fixed" (ionRefresh)="refrescar($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-segment [(ngModel)]="segmentoActivo">
+    <ion-segment-button value="fotos">
+      <ion-label>Fotos</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="info">
+      <ion-label>Info</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-card>
+    <ion-img src="https://ionicframework.com/docs/img/demos/card-media.png"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>DISTRICT</ion-card-subtitle>
+      <ion-card-title>Nueva colección</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Ejemplo de tarjeta con imagen usando ion-card e ion-img.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img alt="miniatura" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+    </ion-thumbnail>
+    <ion-label>Elemento con miniatura</ion-label>
+  </ion-item>
+
+  <p>Progreso de carga:</p>
+  <ion-progress-bar value="0.6"></ion-progress-bar>
+
+  <p>Cargando datos:</p>
+  <ion-spinner name="crescent"></ion-spinner>
+
+</ion-content>
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button>
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button>
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button>
+      <ion-icon name="image"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
