@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start"><ion-back-button defaultHref="/home"></ion-back-button></ion-buttons>
+    <ion-title>Tabs</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <p>Pestaña seleccionada: {{ seleccionado }}</p>
+</ion-content>
+<ion-tab-bar [selectedTab]="seleccionado">
+  <ion-tab-button tab="inicio" (click)="seleccionado = 'inicio'">
+    <ion-icon name="home"></ion-icon>
+    <ion-label>Inicio</ion-label>
+  </ion-tab-button>
+  <ion-tab-button tab="buscar" (click)="seleccionado = 'buscar'">
+    <ion-icon name="search"></ion-icon>
+    <ion-label>Buscar</ion-label>
+  </ion-tab-button>
+  <ion-tab-button tab="perfil" (click)="seleccionado = 'perfil'">
+    <ion-icon name="person"></ion-icon>
+    <ion-label>Perfil</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>

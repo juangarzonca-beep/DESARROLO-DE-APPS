@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start"><ion-back-button defaultHref="/home"></ion-back-button></ion-buttons>
+    <ion-title>Select</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-select label="Ciudad" placeholder="Selecciona una ciudad">
+      <ion-select-option value="neiva">Neiva</ion-select-option>
+      <ion-select-option value="bogota">Bogotá</ion-select-option>
+      <ion-select-option value="cali">Cali</ion-select-option>
+      <ion-select-option value="medellin">Medellín</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-select label="Tallas" placeholder="Selecciona varias" [multiple]="true">
+      <ion-select-option value="s">S</ion-select-option>
+      <ion-select-option value="m">M</ion-select-option>
+      <ion-select-option value="l">L</ion-select-option>
+      <ion-select-option value="xl">XL</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-content>

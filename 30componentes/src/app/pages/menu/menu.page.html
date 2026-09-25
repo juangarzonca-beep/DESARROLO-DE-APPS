@@ -1,0 +1,29 @@
+<ion-menu menuId="menu-demo" contentId="menu-demo-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menú lateral</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item button="true">Opción 1</ion-item>
+      <ion-item button="true">Opción 2</ion-item>
+      <ion-item button="true">Opción 3</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<div class="ion-page" id="menu-demo-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/home"></ion-back-button>
+        <ion-menu-button menu="menu-demo"></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <p>Toca el ícono de menú (☰) para abrir el menú lateral.</p>
+  </ion-content>
+</div>

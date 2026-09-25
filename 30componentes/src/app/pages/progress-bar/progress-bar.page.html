@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start"><ion-back-button defaultHref="/home"></ion-back-button></ion-buttons>
+    <ion-title>Progress Bar</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-label>Progreso al 25%</ion-label>
+  <ion-progress-bar [value]="0.25"></ion-progress-bar>
+  <br />
+  <ion-label>Progreso al 75%</ion-label>
+  <ion-progress-bar [value]="0.75" color="success"></ion-progress-bar>
+  <br />
+  <ion-label>Indeterminado</ion-label>
+  <ion-progress-bar type="indeterminate" color="warning"></ion-progress-bar>
+</ion-content>
