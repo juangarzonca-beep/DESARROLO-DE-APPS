@@ -1,0 +1,26 @@
+.calculadora {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.resultado {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.historial {
+  margin-top: 20px;
+}
+
+.historial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.historial-header h3 {
+  margin: 0;
+  font-size: 15px;
+}
